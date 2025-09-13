@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Khóa Học Kỹ Năng Mềm</title>
+  <style>
+    body {
+      background-color: #e6f5ff;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      color: orange;
+    }
+    h2 {
+      color: green;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid black;
+    }
+    .course {
+      width: 32%;
+      border-right: 1px solid black;
+      padding: 10px;
+    }
+    .course:last-child {
+      border-right: none;
+    }
+    .course img, 
+    .course video {
+      width: 250px;
+      height: 200px;
+    }
+    .red { color: red; font-weight: bold; }
+    .blue { color: blue; font-weight: bold; }
+    .purple { color: purple; font-weight: bold; }
+
+    /* Style cho từng loại danh sách */
+    .circle li {
+      list-style-type: disc;   /* chấm trắng */
+    }
+    .square li {
+      list-style-type: disc;   /* ô vuông đen */
+    }
+    .disc li {
+      list-style-type: circle;     /* chấm đen */
+    }
+
+    .footer {
+      border-top: 2px solid green;
+      margin-top: 10px;
+      text-align: center;
+      padding: 10px;
+    }
+    .footer a {
+      margin: 0 5px;
+      text-decoration: none;
+    }
+    .footer a:nth-child(2) {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Khóa Học Kỹ Năng Mềm</h1>
+  <p><a href="../Tư_liệu_bài_table/bai1ds.html">« Quay lại Tổng quan khóa học</a></p>
+
+  <h2>Danh sách khóa học</h2>
+
+  <div class="container">
+    <!-- Khóa 1 -->
+    <div class="course circle">
+      <img src="kynangmem.jpg" alt="Kỹ năng giao tiếp">
+      <p class="red">Kỹ năng giao tiếp</p>
+      <ul>
+        <li>24 giờ</li>
+        <li>Offline + Online</li>
+        <li><u style="color: blue;">Chi tiết</u>
+          <ul>
+            <li>Thuyết trình</li>
+            <li>Lắng nghe</li>
+            <li>Đàm phán</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Khóa 2 -->
+    <div class="course square">
+      <img src="kynanglanhdao.jpg" alt="Kỹ năng lãnh đạo">
+      <p class="blue">Kỹ năng lãnh đạo</p>
+      <ul>
+        <li>36 giờ</li>
+        <li>Offline</li>
+        <li><u style="color: blue;">Chi tiết</u>
+          <ul>
+            <li>Phong cách</li>
+            <li>Ra quyết định</li>
+            <li>Phát triển nhóm</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Khóa 3 -->
+    <div class="course disc">
+      <video controls>
+        <source src="vidoe.mp4" type="video/mp4">
+      </video>
+      <p class="purple">Kỹ năng quản lý thời gian</p>
+      <ul>
+        <li>16 giờ</li>
+        <li>Online</li>
+        <li><u style="color: blue;">Chi tiết</u>
+          <ul>
+            <li>Kế hoạch</li>
+            <li>Ưu tiên</li>
+            <li>Công cụ hỗ trợ</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer"><u>
+    <a href="#" style="color: blue;">Xem Bài 1</a> | 
+    <a href="#" style="color: pink;">Bài 2 (hiện tại)</a> | 
+    <a href="#" style="color: greenyellow;">Xem Bài 3</a></u>
+  </div>
+</body>
+</html>
